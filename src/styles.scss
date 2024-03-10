@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import 'vars.scss';
+@import './node_modules/bootstrap/scss/bootstrap';
+
+body {
+  background-color: $main-background-color;
+  padding: 20px 10px 0;
+  margin: 0;
+}
+
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+li, a {
+  transition: all 0.2s ease-in-out;
+}
+
+

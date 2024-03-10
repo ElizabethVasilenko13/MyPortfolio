@@ -1,0 +1,42 @@
+<div class="menu-back" [class.active]="isMenuActive" (click)="closeMenu()"></div>
+<div class="container">
+  <nav>
+    <a
+      routerLink="/"
+      routerLinkActive="link-active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      class="logo-mobile">
+      <img class="logo-img" src="assets/logo.png" alt="">
+    </a>
+    <ul class="desktop-menu" [class.mobile_menu]="isMenuActive">
+      <li (click)="closeMenu()">
+        <a
+          routerLink="/"
+          routerLinkActive="link-active"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >home</a>
+      </li>
+      <li (click)="closeMenu()"><a routerLink="projects" routerLinkActive="link-active">projects</a></li>
+      <li class="logo" >
+        <a
+          routerLink="/"
+          routerLinkActive="link-active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          class="logo">
+          <img class="logo-img" src="assets/logo.png" alt="">
+        </a>
+      </li>
+      <li (click)="closeMenu()"><a routerLink="resume" routerLinkActive="link-active">resume</a></li>
+      <li (click)="closeMenu()"><a routerLink="contacts" routerLinkActive="link-active">contacts</a></li>
+    </ul>
+    <button class="menu-icon" (click)="toggleMenu()">
+      <i class="{{menu_icon}}"></i>
+    </button>
+  </nav>
+</div>
+
+<ng-template #logo>
+  <a routerLink="/" routerLinkActive="link-active" [routerLinkActiveOptions]="{ exact: true }" class="logo">
+    <img class="logo-img" src="assets/logo.png" alt="">
+  </a>
+</ng-template>
