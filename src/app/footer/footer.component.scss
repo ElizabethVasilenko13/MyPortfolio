@@ -1,0 +1,80 @@
+@import 'vars';
+
+.container {
+  color: $font-color-light;
+  padding: 40px 10px 5px;
+
+  p {
+    text-align: center;
+  }
+
+  img {
+    margin-right: 10px;
+  }
+
+  .logo {
+    padding-bottom: 10px;
+    display: block;
+    color: $font-color-light;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #475467;
+  }
+
+  .footer__content {
+    margin: 20px auto;
+    border-bottom: 2px solid #475467;
+    padding-bottom: 10px;
+  }
+
+  .nav-menu {
+    a {
+      color: $font-color-light;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &::before {
+        content: '#';
+        font-weight: bold;
+        color: $accent-color;
+        vertical-align: text-top;
+      }
+    }
+  }
+
+  ul:first-of-type {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    column-gap: 30px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .bi-github {
+    color: $font-color-light;
+  }
+
+  .bi {
+    font-size: 30px;
+  }
+}

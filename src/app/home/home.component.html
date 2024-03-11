@@ -2,35 +2,175 @@
   <div class="content">
     <div class="greetings">
       <div class="hello">Hello!</div>
-      <h1>I'm <span class="text-accent">Yelyzaveta</span>
-        <br>
+      <h1>
+        I'm <span class="text-accent">Yelyzaveta</span>
+        <br />
         Frontend Developer
       </h1>
       <div class="greetings__btns">
         <button class="btn1" (click)="downloadFile()">Download CV</button>
-        <!-- <button class="btn2">Contact me</button> -->
       </div>
     </div>
     <div class="photo-block">
-      <img src="assets/me.jpg" alt="">
+      <img src="assets/me.jpg" alt="" />
     </div>
   </div>
 </section>
 <section class="projects-section">
+  <img class="background-images background-middle" src="assets/back_icon_small.svg" alt="" />
+  <img class="background-images background-left" src="assets/back_icon_middle.svg" alt="" />
+  <img class="background-images background-rigth" src="assets/back_icon_middle.svg" alt="" />
+
   <div class="container projects__container">
     <div class="projects__header">
       <h2>projects</h2>
-      <a routerLink="projects" class="link-btn">see all <img class="link-img" src="assets/upright.png" alt=""></a>
+      <a routerLink="projects" class="link-btn"
+        >see all <img class="link-img" src="assets/upright.png" alt=""
+      /></a>
     </div>
 
-    <div class="d">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, reprehenderit. Sed ut ex velit soluta aut similique eum, corporis nihil? Reiciendis, autem. Optio earum nihil quam. Natus laboriosam iure at?
-    Reprehenderit impedit ad facilis quas libero expedita delectus distinctio aliquid quos? Rem aspernatur velit odit tenetur suscipit recusandae sed amet, dolorem consequuntur illum asperiores ad incidunt eius, quidem libero doloribus?
-    Nulla ullam doloremque consequatur eligendi sequi temporibus nisi facere tempora? Veniam ad possimus laborum odit ducimus accusamus dolorum facilis ea itaque saepe corrupti eaque dicta incidunt doloremque, provident nulla minima.
-    Iure ratione voluptatum assumenda fugit odit modi, molestiae, ipsam beatae dolore nesciunt at earum commodi illum quidem libero possimus vero natus eaque! Repellat minima vel nulla, voluptatibus molestiae illum eum.
-    Laborum doloribus deleniti architecto omnis possimus, tempora, veniam ipsa animi consectetur repudiandae magni impedit sequi in quae dolorum eaque temporibus optio aut debitis reiciendis hic incidunt! Porro ut consectetur nemo!
-    Explicabo odit incidunt hic consectetur, consequatur ducimus quos enim officia perferendis atque libero voluptatem doloremque, animi dicta ullam iste aspernatur! Dignissimos magni, placeat quae cum animi dolorem illum molestiae nihil.
-    Aspernatur quidem corrupti vitae quisquam perspiciatis a possimus, mollitia eveniet quo ratione molestiae commodi sit corporis cum accusantium odio esse est culpa doloribus ex molestias cumque error rem? Totam, sit?</div>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/projects/ecommerce/2.jpg" alt="" />
+        <div class="card__content">
+          <div class="card__tech">React, TypeScript, CSS, HTML5</div>
+          <div class="card__deskr">
+            <div class="card__header">ETHNOWEAR shop</div>
+            <div class="card__short-deskr">React eCommerce App</div>
+            <div class="btns">
+              <a class="link-btn">GitHub</a>
+              <a class="link-btn" href="">Live</a>
+            </div>
+          </div>
+          <button class="card__btn">
+            <img class="link-img" src="assets/upright.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/projects/ecommerce/2.jpg" alt="" />
+        <div class="card__content">
+          <div class="card__tech">React, TypeScript, CSS, HTML5</div>
+          <div class="card__deskr">
+            <div class="card__header">ETHNOWEAR shop</div>
+            <div class="card__short-deskr">React eCommerce App</div>
+          </div>
+          <button class="card__btn">
+            <img class="link-img" src="assets/upright.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/projects/ecommerce/2.jpg" alt="" />
+        <div class="card__content">
+          <div class="card__tech">React, TypeScript, CSS, HTML5</div>
+          <div class="card__deskr">
+            <div class="card__header">ETHNOWEAR shop</div>
+            <div class="card__short-deskr">React eCommerce App</div>
+          </div>
+          <button class="card__btn">
+            <img class="link-img" src="assets/upright.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
   </div>
- 
 </section>
-
+<section class="skills-section">
+  <div class="container">
+    <h2>skills</h2>
+    <ul>
+      <li><b>Programming Languages:</b> JavaScript, TypeScript, Node.js</li>
+      <li><b>Frameworks:</b> Angular 2+, React.js</li>
+      <li>
+        <b>Technologies/Other:</b> HTML5, CSS3(SCSS), RxJs, Mongo, NgRx, Git, Jest, Jasmine,
+        RESTful, Redux, Bootstrap, Angular Material
+      </li>
+      <li><b>Developer Tools:</b> VS Code, Figma, Zeplin, Postman</li>
+      <li><b>Project Management:</b> AGILE, JIRA, GitHub</li>
+      <li><b>Languages:</b> English – B2, Ukrainian – Native, Russian – Fluent</li>
+      <li><b>Soft:</b> Teamwork, Results-oriented, Problem-solving, Flexibility</li>
+    </ul>
+  </div>
+</section>
+<section class="about-section">
+  <div class="container">
+    <h2>about me</h2>
+    <div class="content">
+      <div class="back back-rigth"></div>
+      <div class="back back-left"></div>
+      <img src="assets/me.jpg" alt="" />
+      <div class="deskr">
+        Hello, I'm Yelyzaveta!
+        <br />
+        <br />
+        I'm a passionate frontend developer based in Prague, Czech Republic, with a focus on
+        optimizing and enhancing application performance. With a keen eye for detail, I specialize
+        in refactoring code to improve speed and efficiency.
+        <br />
+        <br />
+        One of my notable achievements includes the successful development of a dynamic chat
+        application within a month. This project not only showcased my problem-solving abilities but
+        also highlighted my dedication to delivering effective solutions in a timely manner.
+        <br />
+        <br />
+        I excel in identifying and resolving bottlenecks to ensure seamless user experiences.
+        Throughout my academic journey, I embraced personalized mentorship opportunities to
+        accelerate my learning and elevate my coding standards. By actively participating in
+        comprehensive code reviews, I continuously strive to enhance my skills and contribute to the
+        success of every project I undertake.
+        <br />
+        <br />
+        <em
+          >P.S. Despite currently living in Prague, I am open to relocating to Krakow or
+          Ukraine.</em
+        >
+      </div>
+    </div>
+  </div>
+</section>
+<section class="contacts__section">
+  <div class="container">
+    <h2>contacts</h2>
+    <div class="contacts">
+      <p>I'm currently open to new opportunities! Feel free to reach out to me at any time.</p>
+      <p>Click on the icon for navigation!</p>
+      <ul>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/elizabeth-vasilenko/"
+            title="Go to linkedin page"
+            target="_blank"
+            ><i class="bi bi-linkedin"></i></a
+          >Yelyzaveta Vasylenko
+        </li>
+        <li>
+          <a
+            href="https://github.com/ElizabethVasilenko13"
+            title="Go to GitHub page"
+            target="_blank"
+            ><i class="bi bi-github"></i></a
+          >ElizabethVasilenko13
+        </li>
+        <li>
+          <a href="mailto:liza.vasilenko13@gmail.com" title="Send e-mail" target="_blank"
+            ><i class="bi bi-envelope-at-fill"></i></a
+          >liza.vasilenko13&#64;gmail.com
+        </li>
+        <li>
+          <a href="https://t.me/vasilenkkko" title="Open in telegram" target="_blank"
+            ><i class="bi bi-telegram"></i></a
+          >&#64;vasilenkkko
+        </li>
+        <li>
+          <a
+            href="https://discordapp.com/users/762593540260888618/ "
+            title="Open in discord"
+            target="_blank"
+            ><i class="bi bi-discord"></i></a
+          >lizok6189
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>

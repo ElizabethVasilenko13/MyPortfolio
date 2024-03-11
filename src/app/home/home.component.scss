@@ -1,7 +1,7 @@
 @import 'vars';
 
 .greetings__container {
-  margin: 20px 0 80px;
+  margin: 20px auto 80px;
   padding: 0 10px;
 }
 
@@ -10,6 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  gap: 70px;
   align-items: center;
 }
 
@@ -39,7 +40,6 @@ h1 {
   margin-top: 20px;
   justify-content: flex-start;
 
-
   button {
     min-width: 120px;
     border-radius: 60px;
@@ -54,7 +54,6 @@ h1 {
     }
   }
 }
-
 
 .hello {
   margin: 0 0 10px 0;
@@ -77,37 +76,38 @@ h1 {
 
 @keyframes scaleLarge {
   0% {
-      transform: scale(0.2, -0.2) rotate(180deg);
+    transform: scale(0.2, -0.2) rotate(180deg);
   }
   100% {
-      transform: scale(0.8, -0.8) rotate(180deg);
+    transform: scale(0.8, -0.8) rotate(180deg);
   }
 }
 
 @keyframes scaleSmall {
   0% {
-      transform: scale(0.2, -0.2);
+    transform: scale(0.2, -0.2);
   }
   100% {
-      transform: scale(0.4, -0.4);
+    transform: scale(0.4, -0.4);
   }
 }
 
 .photo-block {
-  width: 280px;
-  height: 280px;
-  background-color: $dark-color;
-  border-radius: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex: 0 0 280px;
+  align-items: center;
+  background-image: url('../../assets/image-sircle.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 360px;
 
   img {
-    border: 3px solid #f85d09a8;
-    max-width: 240px;
-    width: 100%;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
+    margin-bottom: 31px;
   }
 }
 
@@ -120,6 +120,51 @@ h1 {
   color: $font-color-light;
   position: relative;
   z-index: 4;
+
+  a {
+    display: inline-block;
+    background-color: $accent-color;
+    text-decoration: none;
+  }
+
+  &:hover {
+    .background-left {
+      transform: rotate(-4deg) translateY(4px);
+    }
+    .background-rigth {
+      transform: rotate(184deg) translateY(4px);
+    }
+    .background-middle {
+      transform: rotate(4deg);
+    }
+  }
+
+  .background-images {
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .background-left {
+    top: 120px;
+    left: -50px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .background-rigth {
+    bottom: -10px;
+    border-bottom-right-radius: 20px;
+    right: 10px;
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+  }
+
+  .background-middle {
+    top: -15px;
+    right: 40%;
+  }
 }
 
 .projects__container {
@@ -131,12 +176,6 @@ h1 {
   justify-content: space-between;
   margin-bottom: 15px;
   align-items: center;
-
-  a {
-    display: inline-block;
-    background-color: $accent-color;
-    text-decoration: none;
-  }
 
   .link-img {
     width: 25px;
@@ -150,19 +189,206 @@ h1 {
   }
 }
 
-h2 {
-  &::before {
-    content: '#';
-    font-weight: bold;
-    color: $accent-color;
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.card {
+  min-width: 260px;
+  max-width: 260px;
+  backdrop-filter: blur(3px);
+  background: rgba(255, 255, 255, 0.22);
+  color: white;
+  border-radius: 50px;
+  border: 1px solid #929292;
+  position: relative;
+  box-sizing: border-box;
+
+  .btns {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 15px;
+
+    .link-btn {
+      padding: 5px 10px;
+      min-width: 60px;
+      text-align: center;
+
+      &:hover {
+        background-color: #cc4b05;
+      }
+    }
   }
-  &::after {
-    content: ' ----------------------';
-    color: $accent-color;
-    width: 60px;
+
+  img {
+    width: 260px;
+    object-fit: cover;
+    border-radius: 50px 50px 0 0;
+    max-height: 190px;
+    border: none;
+  }
+
+  .link-img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .card__deskr {
+    padding-left: 30px;
+    padding-top: 10px;
+  }
+
+  &:has(.card__btn:hover) {
+    background-color: #f85d0930;
+  }
+
+  .card__btn {
+    background-color: $btn-dark-color;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $accent-color;
+    }
+  }
+
+  .card__header {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .card__content {
+    padding: 5px 0 15px;
+  }
+
+  .card__tech {
+    padding: 0 0 5px 20px;
+    border-bottom: 1px solid #929292;
+  }
+
+  .card__btn {
+    border-color: black;
   }
 }
 
+.skills-section {
+  margin: 50px 0;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px dotted $accent-color;
+    border-radius: 20px;
+
+    &::before {
+      content: '# ';
+      font-weight: bold;
+      color: $accent-color;
+    }
+  }
+}
+
+.about-section {
+  background-color: $secondary-background-color;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 40px;
+  .container {
+    padding: 40px 10px;
+
+    .content {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .deskr {
+      max-width: 600px;
+      backdrop-filter: blur(3px);
+      background: rgba(255, 255, 255, 0.22);
+      border-radius: 50px;
+      padding: 20px;
+    }
+
+    img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50px;
+    }
+
+    .back {
+      z-index: -1;
+      background-color: $accent-color;
+      position: absolute;
+    }
+
+    .back-left {
+      width: 300px;
+      height: 300px;
+      left: 0;
+      top: 50%;
+      clip-path: circle(48.9% at 0 50%);
+      transform: translateY(-50%);
+    }
+    .back-rigth {
+      clip-path: circle(43.6% at 100% 49%);
+      width: 600px;
+      height: 600px;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.contacts {
+  .bi {
+    font-size: 40px;
+
+    &:hover {
+      font-size: 42px;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    i {
+      margin-right: 20px;
+    }
+  }
+}
+
+.contacts__section {
+  margin: 40px 0;
+}
 
 @media screen and (min-width: 128px) and (max-width: 1000px) {
   .photo-block {
@@ -190,5 +416,16 @@ h2 {
   .greetings__btns {
     margin: 40px auto;
     justify-content: center;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  h1 {
+    max-width: 300px;
+
+    &::after {
+      bottom: -50px;
+      right: -20px;
+    }
   }
 }
