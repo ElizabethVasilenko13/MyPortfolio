@@ -144,8 +144,8 @@ ul {
     }
 
     .card__deskr {
-      padding-left: 30px;
-      padding-top: 10px;
+      padding: 10px 20px 0;
+
     }
 
     &:has(.card__btn:hover) {
@@ -187,6 +187,28 @@ ul {
   }
 }
 
+.carousel-control-prev-icon {
+  background-image: url('assets/arrow_left.svg') !important;
+}
+
+.carousel-control-next-icon {
+  transform: scale(1.5);
+  background-image: url('assets/arrow_rigth.svg') !important;
+}
+
+.carousel-indicators {
+
+  bottom: -80px !important;
+  margin-bottom: 70px !important;
+  button {
+    background-color: $accent-color !important;
+    height: 10px !important;
+    border-radius: 10px !important;
+    border: none !important;
+
+  }
+}
+
 li,
 a {
   transition: all 0.2s ease-in-out;
@@ -225,3 +247,6 @@ h2 {
 .container {
   padding: 0 10px;
 }
+
+/* Importing Bootstrap SCSS file. */
+@import "./node_modules/bootstrap/scss/bootstrap";

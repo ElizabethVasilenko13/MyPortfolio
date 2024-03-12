@@ -7,9 +7,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { FooterComponent } from '@shared/components/footer/footer.component';
 import { HeaderComponent } from '@shared/components/header/header.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { ProjectModalComponent } from '@shared/components/modal/modal.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, ProjectModalComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -17,6 +19,7 @@ import { HeaderComponent } from '@shared/components/header/header.component';
     HeaderComponent,
     FooterComponent,
     ModalModule.forRoot(),
+    CarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],

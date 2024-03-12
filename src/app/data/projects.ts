@@ -13,16 +13,16 @@ export const projects: Projects = {
         `Utilized CommerceTools platform to enhance the functionality and performance of the application.
       Successfully integrated features such as filtering/sorting, authentication, and product pages`,
       ],
-      description: `It's a comprehensive online shopping portal that provides an interactive and seamless experience to users. From product discovery to checkout, the application ensures a smooth journey for the user, enhancing their engagement and boosting their purchasing confidence.Users can browse through a vast range of products, view detailed descriptions, add their favorite items to the basket 🛒, and proceed to checkout 💳. It includes features such as user registration and login 📝🔐, product search 🔍, product categorization, and sorting to make the shopping experience more streamlined and convenient.
+      description: `It's a comprehensive online shopping portal that provides an interactive and seamless experience to users. Users can browse through a vast range of products, view detailed descriptions, add their favorite items to the basket 🛒, and proceed to checkout 💳.
       The application is powered by CommerceTools 🌐, a leading provider of commerce solutions for B2C and B2B enterprises.`,
       gitHubLink: 'https://github.com/ElizabethVasilenko13/ECommerce-App',
       pictures: [
         'assets/projects/ecommerce/1.jpg',
-        'assets/projects/ecommerce/3.jpg',
-        'assets/projects/ecommerce/4.jpg',
-        'assets/projects/ecommerce/5.jpg',
-        'assets/projects/ecommerce/6.jpg',
-        'assets/projects/ecommerce/7.jpg',
+        'assets/projects/ecommerce/3.png',
+        'assets/projects/ecommerce/4.png',
+        'assets/projects/ecommerce/5.png',
+        'assets/projects/ecommerce/6.png',
+        'assets/projects/ecommerce/7.png',
       ],
       technologies: [
         'React',
