@@ -1,0 +1,18 @@
+<section class="projectst__section">
+  <div class="container">
+    <h1>Projects</h1>
+    <p>List of my projects</p>
+    <h2>complete-apps</h2>
+    <div class="cards projects">
+      <app-card *ngFor="let project of projects.completedApps" [project]="project"></app-card>
+    </div>
+    <h2>games</h2>
+    <div class="cards projects">
+      <app-card *ngFor="let project of projects.games" [project]="project"></app-card>
+    </div>
+    <h2>smal-projects</h2>
+    <div class="cards projects">
+      <app-card *ngFor="let project of projects.smallProjects" [project]="project"></app-card>
+    </div>
+  </div>
+</section>

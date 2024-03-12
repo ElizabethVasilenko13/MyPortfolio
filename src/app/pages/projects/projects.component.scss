@@ -1,0 +1,23 @@
+@import 'vars';
+
+.projectst__section {
+  margin-top: 70px;
+
+  h1 {
+    &::before {
+      content: '/';
+      color: $accent-color;
+    }
+  }
+
+  .cards:last-of-type {
+    margin-bottom: 100px;
+  }
+
+  h2 {
+    margin: 50px 0;
+    &::after {
+      content: '';
+    }
+  }
+}

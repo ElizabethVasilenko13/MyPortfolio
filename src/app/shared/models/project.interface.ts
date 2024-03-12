@@ -3,10 +3,17 @@ export interface Project {
   name: string;
   summary: string;
   description: string;
-  gitHubLink: string;
+  responsibilities?: string[];
+  gitHubLink?: string;
   deployLink?: string;
   pictures: string[];
-  technologies: Technologies[];
+  technologies: string[];
+}
+
+export interface Projects {
+  completedApps?: Project[];
+  games?: Project[];
+  smallProjects?: Project[];
 }
 
 interface Technologies {

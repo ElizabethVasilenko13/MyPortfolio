@@ -25,7 +25,7 @@ h1 {
   max-width: 440px;
 
   &::after {
-    content: url('../../assets/abstract.svg');
+    content: url('/assets/abstract.svg');
     position: absolute;
     bottom: -64px;
     right: -70px;
@@ -65,7 +65,7 @@ h1 {
   position: relative;
 
   &::before {
-    content: url('../../assets/abstract.svg');
+    content: url('/assets/abstract.svg');
     position: absolute;
     top: -70px;
     right: 73px;
@@ -96,7 +96,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url('../../assets/image-sircle.png');
+  background-image: url('/assets/image-sircle.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -112,7 +112,7 @@ h1 {
 }
 
 .projects-section {
-  background-image: url('../../assets/back.svg');
+  background-image: url('/assets/back.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -189,98 +189,6 @@ h1 {
   }
 }
 
-.cards {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 40px;
-}
-
-.card {
-  min-width: 260px;
-  max-width: 260px;
-  backdrop-filter: blur(3px);
-  background: rgba(255, 255, 255, 0.22);
-  color: white;
-  border-radius: 50px;
-  border: 1px solid #929292;
-  position: relative;
-  box-sizing: border-box;
-
-  .btns {
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-    margin-top: 15px;
-
-    .link-btn {
-      padding: 5px 10px;
-      min-width: 60px;
-      text-align: center;
-
-      &:hover {
-        background-color: #cc4b05;
-      }
-    }
-  }
-
-  img {
-    width: 260px;
-    object-fit: cover;
-    border-radius: 50px 50px 0 0;
-    max-height: 190px;
-    border: none;
-  }
-
-  .link-img {
-    width: 25px;
-    height: 25px;
-  }
-
-  .card__deskr {
-    padding-left: 30px;
-    padding-top: 10px;
-  }
-
-  &:has(.card__btn:hover) {
-    background-color: #f85d0930;
-  }
-
-  .card__btn {
-    background-color: $btn-dark-color;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 15px;
-    right: 10px;
-    transition: all 0.3s ease-in-out;
-
-    &:hover {
-      background-color: $accent-color;
-    }
-  }
-
-  .card__header {
-    font-weight: bold;
-    font-size: 18px;
-  }
-
-  .card__content {
-    padding: 5px 0 15px;
-  }
-
-  .card__tech {
-    padding: 0 0 5px 20px;
-    border-bottom: 1px solid #929292;
-  }
-
-  .card__btn {
-    border-color: black;
-  }
-}
-
 .skills-section {
   margin: 50px 0;
 
@@ -337,6 +245,7 @@ h1 {
       z-index: -1;
       background-color: $accent-color;
       position: absolute;
+      transform: translateY(-50%);
     }
 
     .back-left {
@@ -345,7 +254,6 @@ h1 {
       left: 0;
       top: 50%;
       clip-path: circle(48.9% at 0 50%);
-      transform: translateY(-50%);
     }
     .back-rigth {
       clip-path: circle(43.6% at 100% 49%);
@@ -353,7 +261,6 @@ h1 {
       height: 600px;
       right: 0;
       top: 50%;
-      transform: translateY(-50%);
     }
   }
 }

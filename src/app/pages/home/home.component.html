@@ -30,49 +30,7 @@
     </div>
 
     <div class="cards">
-      <div class="card">
-        <img src="assets/projects/ecommerce/2.jpg" alt="" />
-        <div class="card__content">
-          <div class="card__tech">React, TypeScript, CSS, HTML5</div>
-          <div class="card__deskr">
-            <div class="card__header">ETHNOWEAR shop</div>
-            <div class="card__short-deskr">React eCommerce App</div>
-            <div class="btns">
-              <a class="link-btn">GitHub</a>
-              <a class="link-btn" href="">Live</a>
-            </div>
-          </div>
-          <button class="card__btn">
-            <img class="link-img" src="assets/upright.png" alt="" />
-          </button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/projects/ecommerce/2.jpg" alt="" />
-        <div class="card__content">
-          <div class="card__tech">React, TypeScript, CSS, HTML5</div>
-          <div class="card__deskr">
-            <div class="card__header">ETHNOWEAR shop</div>
-            <div class="card__short-deskr">React eCommerce App</div>
-          </div>
-          <button class="card__btn">
-            <img class="link-img" src="assets/upright.png" alt="" />
-          </button>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/projects/ecommerce/2.jpg" alt="" />
-        <div class="card__content">
-          <div class="card__tech">React, TypeScript, CSS, HTML5</div>
-          <div class="card__deskr">
-            <div class="card__header">ETHNOWEAR shop</div>
-            <div class="card__short-deskr">React eCommerce App</div>
-          </div>
-          <button class="card__btn">
-            <img class="link-img" src="assets/upright.png" alt="" />
-          </button>
-        </div>
-      </div>
+      <app-card *ngFor="let project of projects.completedApps" [project]="project"></app-card>
     </div>
   </div>
 </section>
