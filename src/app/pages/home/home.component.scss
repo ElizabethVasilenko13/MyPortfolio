@@ -14,9 +14,7 @@
   align-items: center;
 }
 
-.greetings {
-  margin-left: 30px;
-}
+
 
 h1 {
   font-size: 36px;
@@ -34,45 +32,7 @@ h1 {
   }
 }
 
-.greetings__btns {
-  display: flex;
-  column-gap: 20px;
-  margin-top: 20px;
-  justify-content: flex-start;
 
-  button {
-    min-width: 120px;
-    border-radius: 60px;
-    text-align: center;
-    color: $font-color-light;
-    transition: all 0.4 ease-in-out;
-    background-color: $accent-color;
-    vertical-align: middle;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-}
-
-.hello {
-  margin: 0 0 10px 0;
-  border: 2px solid $dark-color;
-  border-radius: 38px;
-  padding: 8px 15px;
-  width: 103px;
-  text-align: center;
-  position: relative;
-
-  &::before {
-    content: url('/assets/abstract.svg');
-    position: absolute;
-    top: -70px;
-    right: 73px;
-    transform: scale(0.4, -0.4);
-    animation: scaleSmall 0.6s ease-in-out;
-  }
-}
 
 @keyframes scaleLarge {
   0% {
@@ -92,24 +52,6 @@ h1 {
   }
 }
 
-.photo-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('/assets/image-sircle.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 360px;
-
-  img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    margin-bottom: 31px;
-  }
-}
 
 .projects-section {
   background-image: url('/assets/back.svg');
@@ -169,29 +111,6 @@ h1 {
 
 .projects__container {
   padding: 30px 10px;
-}
-
-.projects__header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-  align-items: center;
-
-  a {
-    background-color: $accent-color;
-    text-decoration: none;
-  }
-
-  .link-img {
-    width: 25px;
-    height: 25px;
-  }
-
-  a:hover {
-    .link-img {
-      transform: rotate(45deg);
-    }
-  }
 }
 
 .skills-section {
@@ -302,42 +221,4 @@ h1 {
   margin: 40px 0;
 }
 
-@media screen and (min-width: 128px) and (max-width: 1000px) {
-  .photo-block {
-    display: none;
-  }
 
-  .greetings {
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .greetings__container {
-    margin: auto;
-  }
-
-  .hello {
-    margin: 0 auto 10px;
-  }
-
-  h1 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  .greetings__btns {
-    margin: 40px auto;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 578px) {
-  h1 {
-    max-width: 300px;
-
-    &::after {
-      bottom: -50px;
-      right: -20px;
-    }
-  }
-}
