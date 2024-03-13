@@ -1,0 +1,122 @@
+@import 'vars';
+
+.contacts__section {
+  margin-top: 70px;
+  margin-bottom: 70px;
+
+  h1 {
+    &::before {
+      content: '/';
+      color: $accent-color;
+    }
+  }
+
+  .cards:last-of-type {
+    margin-bottom: 100px;
+  }
+
+  h2 {
+    &::before {
+      color: $font-color-light;
+    }
+    &::after {
+      content: '';
+    }
+  }
+
+  .form-container {
+    margin-top: 70px;
+    max-width: 600px;
+    width: 100%;
+    background-color: $accent-color;
+    padding: 20px;
+    border-radius: 30px;
+    position: relative;
+  }
+
+  .error {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  button {
+    background-color: #1d2939;
+    border-radius: 60px;
+
+    .link-img {
+      width: 25px;
+      height: 25px;
+    }
+
+    &:hover {
+      .link-img {
+        transform: rotate(45deg);
+      }
+    }
+
+    &:disabled {
+      background-color: #1d29398e;
+      &:hover {
+        .link-img {
+          transform: none;
+        }
+      }
+    }
+  }
+  .form__body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+
+    .bi-envelope-at-fill {
+      color: #C5221F;
+    }
+    ul {
+      backdrop-filter: blur(3px);
+    background: rgb(156 154 152 / 22%);
+      padding: 20px;
+      border-radius: 50px;
+      margin: 0;
+      position: absolute;
+      right: -40px;
+      bottom: 0;
+    }
+  }
+
+  .bi-github {
+    color: $font-color-light;
+  }
+
+  .bi {
+    font-size: 40px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 16px;
+    border: 1px solid $accent-color;
+    margin-bottom: 10px;
+  }
+  input:focus,
+  input:focus-visible,
+  textarea:focus,
+  textarea:focus-visible {
+    outline: none;
+  }
+}

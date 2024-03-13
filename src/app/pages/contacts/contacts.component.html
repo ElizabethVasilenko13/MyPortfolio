@@ -1,1 +1,64 @@
-<p>contacts works!</p>
+<div class="contacts__section">
+  <div class="container">
+    <h1>contacts</h1>
+      <div class="form-container">
+        <h2>contact me</h2>
+        <div class="form__body">
+          <form  [formGroup]="sendMessageForm" (ngSubmit)="sendMessage()">
+            <input
+              type="text"
+              placeholder="Enter your name"
+              formControlName="name"
+            />
+            <input
+              type="email"
+              placeholder="Enter your email"
+              formControlName="email"
+            />
+            <textarea
+              placeholder="Enter your message"
+              formControlName="message"
+            ></textarea>
+            <div class="error" *ngIf="sendMessageForm.invalid && sendMessageForm.touched">
+              Please fill out all fields.
+            </div>
+            <button [disabled]="sendMessageForm.invalid" type="submit">Send <img class="link-img" src="assets/upright.png" alt="" /></button>
+          </form>
+          <ul>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/elizabeth-vasilenko/"
+                title="Go to linkedin page"
+                target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/ElizabethVasilenko13" title="Go to GitHub page" target="_blank"
+                ><i class="bi bi-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="mailto:liza.vasilenko13@gmail.com" title="Send e-mail" target="_blank"
+                ><i class="bi bi-envelope-at-fill"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://t.me/vasilenkkko" title="Open in telegram" target="_blank"
+                ><i class="bi bi-telegram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://discordapp.com/users/762593540260888618/ "
+                title="Open in discord"
+                target="_blank"
+                ><i class="bi bi-discord"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>

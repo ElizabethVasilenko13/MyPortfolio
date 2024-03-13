@@ -81,7 +81,7 @@ export const projects: Projects = {
       summary: 'FullStack Trello Clone (in progress)',
       description: ``,
       inProgress: true,
-      gitHubLink: 'https://github.com/ElizabethVasilenko13/youtube-client-app',
+      gitHubLink: 'https://github.com/ElizabethVasilenko13/TrelloAngularClone/tree/develop',
       deployLink: '',
       pictures: ['assets/projects/progress/1.jpg'],
       technologies: ['Angular', 'TypeScript', 'HTML', 'SCSS', 'Socket.io', 'Node.js', 'RxJs'],
