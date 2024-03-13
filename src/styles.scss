@@ -106,6 +106,7 @@ ul {
 
     min-width: 260px;
     max-width: 260px;
+    min-height: 380px;
     backdrop-filter: blur(3px);
     background: rgba(255, 255, 255, 0.22);
     color: white;
@@ -114,8 +115,11 @@ ul {
     position: relative;
     box-sizing: content-box;
     height: 100%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .btns {
+      padding: 0px 20px 15px;
       display: flex;
       justify-content: flex-start;
       gap: 10px;
@@ -184,12 +188,12 @@ ul {
     .card__content {
       padding: 5px 0 15px;
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
     }
 
     .card__tech {
-      padding: 0 20px 5px 20px;
+      padding: 5px  20px;
       border-bottom: 1px solid #929292;
     }
 

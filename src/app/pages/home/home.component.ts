@@ -1,9 +1,10 @@
-import { Component, OnInit, Renderer2, inject } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { CardComponent } from '@shared/components/card/card.component';
 import { ProjectsService } from '@services/projects.service';
 import { Projects } from '@shared/models/project.interface';
+import { DownloadCVService } from '@services/download-cv.service';
 
 @Component({
   selector: 'app-home',
@@ -13,21 +14,12 @@ import { Projects } from '@shared/models/project.interface';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  private renderer = inject(Renderer2);
+  protected downLoadService = inject(DownloadCVService);
   private projectsService = inject(ProjectsService);
 
   projects: Projects = {};
 
   ngOnInit(): void {
     this.projects = this.projectsService.getProjects();
-  }
-
-  downloadFile(): void {
-    const link = this.renderer.createElement('a');
-    link.setAttribute('target', '_blank');
-    link.setAttribute('href', '../../assets/CV_Yelyzaveta_Vasylenko_Frontend.pdf');
-    link.setAttribute('download', 'CV_Yelyzaveta_Vasylenko_Frontend.pdf');
-    link.click();
-    link.remove();
   }
 }

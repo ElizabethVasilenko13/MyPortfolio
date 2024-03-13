@@ -1,21 +1,21 @@
 <div class="card" (click)="projectModalServie.openProjectModal(project)">
-  <img class="card__img" [src]="project.pictures[0]" alt="Project Image" />
-  <div class="card__content">
+  <div class="card__top">
+    <button class="card__btn" (click)="projectModalServie.openProjectModal(project)">
+      <img class="link-img" src="assets/upright.png" alt="" />
+    </button>
+    <img class="card__img" [src]="project.pictures[0]" alt="Project Image" />
     <div class="card__tech">{{ (project.technologies | slice: 0 : 6).join(', ') }}</div>
     <div class="card__deskr">
       <div class="card__header">{{ project.name }}</div>
       <div class="card__short-deskr">{{ project.summary }}</div>
-      <div class="btns">
-        <a *ngIf="project.gitHubLink" class="link-btn" [href]="project.gitHubLink" target="_blank"
-          >GitHub</a
-        >
-        <a *ngIf="project.deployLink" class="link-btn" [href]="project.deployLink" target="_blank"
-          >Live</a
-        >
-      </div>
     </div>
-    <button class="card__btn" (click)="projectModalServie.openProjectModal(project)">
-      <img class="link-img" src="assets/upright.png" alt="" />
-    </button>
+  </div>
+  <div class="btns">
+    <a *ngIf="project.gitHubLink" class="link-btn" [href]="project.gitHubLink" target="_blank"
+      >GitHub</a
+    >
+    <a *ngIf="project.deployLink" class="link-btn" [href]="project.deployLink" target="_blank"
+      >Live</a
+    >
   </div>
 </div>

@@ -90,7 +90,7 @@ export const projects: Projects = {
       id: 4,
       name: 'Neighborhood Chat App',
       summary: 'Angular Neighborhood Chat App',
-      description: ``,
+      description: `The Chat Condominium Association "AtHome" is a communication platform created for residents of multi-apartment buildings. The platform offers a wide range of features for exchanging information and ideas, allowing residents to easily interact on both personal and professional levels. `,
       inProgress: true,
       pictures: ['assets/projects/progress/1.jpg'],
       technologies: ['Angular', 'TypeScript', 'HTML', 'SCSS', 'RxJs'],
