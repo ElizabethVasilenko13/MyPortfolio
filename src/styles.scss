@@ -31,6 +31,11 @@ footer {
   background-size: cover;
   border-radius: 20px 20px 0 0;
 }
+
+.modal-content {
+  border-radius: 60px !important;
+}
+
 .logo-img {
   width: 100px;
   border-radius: 50px;
@@ -93,6 +98,12 @@ ul {
     }
   }
   .card {
+    &:hover {
+      background-color: #f85d0930;
+    }
+
+    cursor: pointer;
+
     min-width: 260px;
     max-width: 260px;
     backdrop-filter: blur(3px);
@@ -103,7 +114,6 @@ ul {
     position: relative;
     box-sizing: content-box;
     height: 100%;
-    justify-content: space-between;
 
     .btns {
       display: flex;
@@ -145,7 +155,6 @@ ul {
 
     .card__deskr {
       padding: 10px 20px 0;
-
     }
 
     &:has(.card__btn:hover) {
@@ -174,6 +183,9 @@ ul {
 
     .card__content {
       padding: 5px 0 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .card__tech {
@@ -197,7 +209,6 @@ ul {
 }
 
 .carousel-indicators {
-
   bottom: -80px !important;
   margin-bottom: 70px !important;
   button {
@@ -205,7 +216,6 @@ ul {
     height: 10px !important;
     border-radius: 10px !important;
     border: none !important;
-
   }
 }
 
@@ -249,4 +259,4 @@ h2 {
 }
 
 /* Importing Bootstrap SCSS file. */
-@import "./node_modules/bootstrap/scss/bootstrap";
+@import './node_modules/bootstrap/scss/bootstrap';

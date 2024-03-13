@@ -30,7 +30,10 @@
     </div>
 
     <div class="cards">
-      <app-card *ngFor="let project of projects.completedApps" [project]="project"></app-card>
+      <app-card
+        *ngFor="let project of projects.completedApps | slice: 0 : 3"
+        [project]="project"
+      ></app-card>
     </div>
   </div>
 </section>

@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" (click)="projectModalServie.openProjectModal(project)">
   <img class="card__img" [src]="project.pictures[0]" alt="Project Image" />
   <div class="card__content">
     <div class="card__tech">{{ (project.technologies | slice: 0 : 6).join(', ') }}</div>

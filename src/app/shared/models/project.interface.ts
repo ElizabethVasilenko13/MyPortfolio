@@ -8,15 +8,11 @@ export interface Project {
   deployLink?: string;
   pictures: string[];
   technologies: string[];
+  inProgress?: boolean;
 }
 
 export interface Projects {
   completedApps?: Project[];
   games?: Project[];
   smallProjects?: Project[];
-}
-
-interface Technologies {
-  technologiName: string;
-  technologiBootstrapIconName: string;
 }

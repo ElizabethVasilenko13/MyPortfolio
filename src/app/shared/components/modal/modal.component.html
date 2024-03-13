@@ -1,18 +1,22 @@
 <div class="modal-header">
-  <div class="title"><h2>{{project.name}}</h2>
-    <p><b>{{project.summary}}</b></p></div>
+  <div class="title">
+    <h2>{{ project.name }}</h2>
+    <p>
+      <b>{{ project.summary }}</b>
+    </p>
+  </div>
   <button class="btn-close" (click)="modalRef.hide()"></button>
 </div>
 <div class="modal-body">
   <carousel class="carousel" [noWrap]="true">
-    <slide *ngFor="let picture of project.pictures; let index=index">
-      <img [src]="picture" alt="slider project picture">
+    <slide *ngFor="let picture of project.pictures; let index = index">
+      <img [src]="picture" alt="slider project picture" />
     </slide>
   </carousel>
 
   <div class="deskr">
     <h5>Description:</h5>
-    {{project.description}}
+    {{ project.description }}
   </div>
 
   <div class="deskr">
@@ -26,10 +30,8 @@
 
   <div *ngIf="project.responsibilities" class="deskr">
     <h5>Responsibilities</h5>
-    <ul >
-      <li *ngFor="let responsibility of project.responsibilities">{{responsibility}}</li>
+    <ul>
+      <li *ngFor="let responsibility of project.responsibilities">{{ responsibility }}</li>
     </ul>
   </div>
-  
-
 </div>

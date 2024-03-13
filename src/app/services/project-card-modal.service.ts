@@ -11,6 +11,7 @@ export class ProjectCardModalService {
   modalRef?: BsModalRef;
 
   openProjectModal(project: Project): void {
+    if (project.inProgress) return;
     const modalOptions: ModalOptions = {
       class: 'modal-lg',
       initialState: {

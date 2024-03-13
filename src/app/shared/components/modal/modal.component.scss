@@ -8,7 +8,7 @@ h2 {
 
 .modal-header {
   align-items: start !important;
-  padding: 20px 20px 0 !important;
+  padding: 25px 40px 0 !important;
 }
 
 ul {
@@ -26,7 +26,6 @@ li {
     color: $accent-color;
   }
 }
-
 
 .technologies {
   display: flex;
@@ -46,19 +45,17 @@ li {
   margin: 20px;
 }
 .modal-body {
-
   .carousel {
     max-height: 300px;
     min-height: 300px;
   }
   img {
-object-fit: contain;
-    width:100%;
-margin: 20px auto;
+    object-fit: contain;
+    width: 100%;
+    margin: 20px auto;
     display: block;
     max-height: 400px;
     min-height: 400px;
     height: 100%;
   }
-
 }
