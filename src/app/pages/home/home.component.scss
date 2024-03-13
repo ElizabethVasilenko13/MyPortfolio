@@ -177,6 +177,11 @@ h1 {
   margin-bottom: 15px;
   align-items: center;
 
+  a {
+    background-color: $accent-color;
+    text-decoration: none;
+  }
+
   .link-img {
     width: 25px;
     height: 25px;
