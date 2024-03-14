@@ -17,19 +17,18 @@ export class HeaderComponent {
 
   toggleMenu(): void {
     this.isMenuActive = !this.isMenuActive;
-    this.menu_icon = this.isMenuActive ? BootstrapIcons.close_icon : BootstrapIcons.menu_icon;
+
     if (this.isMenuActive) {
       this.renderer.addClass(document.body, 'menu-active');
     } else {
       this.renderer.removeClass(document.body, 'menu-active');
     }
+    this.menu_icon = this.isMenuActive ? BootstrapIcons.close_icon : BootstrapIcons.menu_icon;
   }
 
   closeMenu(): void {
-    if (this.isMenuActive) {
-      this.isMenuActive = false;
-      this.menu_icon = BootstrapIcons.menu_icon;
-    }
-    return;
+    this.isMenuActive = false;
+    this.menu_icon = BootstrapIcons.menu_icon;
+    this.renderer.removeClass(document.body, 'menu-active');
   }
 }

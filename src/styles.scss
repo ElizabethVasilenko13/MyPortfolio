@@ -64,6 +64,16 @@ h2 {
   }
 }
 
+
+@media  (max-width: 378px) {
+  h2 {
+    text-wrap: wrap;
+    &::after {
+      content: '';
+    }
+  }
+}
+
 li {
   list-style: none;
 }
@@ -325,64 +335,6 @@ h2 {
   }
 }
 
-@media screen and (min-width: 128px) and (max-width: 1000px) {
-  .photo-block {
-    display: none;
-  }
-
-  .greetings {
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .greetings__container {
-    margin: auto;
-  }
-
-  .hello {
-    margin: 0 auto 10px;
-  }
-
-  h1 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-
-  .greetings__btns {
-    margin: 40px auto;
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 578px) {
-  h1 {
-    max-width: 300px;
-
-    &::after {
-      bottom: -50px;
-      right: -20px;
-    }
-  }
-}
-
-.photo-block {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('/assets/image-sircle.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 360px;
-  height: 360px;
-
-  img {
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
-    margin-bottom: 31px;
-  }
-}
 
 /* Importing Bootstrap SCSS file. */
 @import './node_modules/bootstrap/scss/bootstrap';

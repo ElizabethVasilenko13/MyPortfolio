@@ -12,8 +12,8 @@ export class DownloadCVService {
   downloadCV(): void {
     const link = this.renderer.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', '../../assets/CV_Yelyzaveta_Vasylenko_Frontend.pdf');
-    link.setAttribute('download', 'CV_Yelyzaveta_Vasylenko_Frontend.pdf');
+    link.setAttribute('href', '../../assets/CV_Yelyzaveta_Vasylenko.pdf');
+    link.setAttribute('download', 'CV_Yelyzaveta_Vasylenko.pdf');
     link.click();
     link.remove();
   }

@@ -125,3 +125,17 @@ h4 {
     }
   }
 }
+
+@media (max-width: 578px) {
+  
+  ul {
+    margin: 15px 0 0 0;
+    padding: 0;
+  }
+
+  .resume__content:last-of-type {
+    li {
+      font-size: 16px;
+    }
+  }
+}
